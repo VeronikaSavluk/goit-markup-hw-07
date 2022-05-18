@@ -1,0 +1,76 @@
+/* Team page*/
+.page-team {
+    background-color: #F5F4FA;
+}
+
+.team_member {
+    margin-right: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:last-child {
+    margin-right: 0;
+}}
+
+.team_member-card {
+    padding: 30px 0;
+}
+
+.team_member-name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $text-color;
+}
+
+.team_member-position {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team_member-accounts {
+    display: flex;
+    justify-items: center;
+    margin-top: 16px;
+    margin-right: 32px;
+    margin-left: 32px;
+}
+
+.team_member-account,
+.account {
+    margin-right: 10px;
+    &:last-child {
+    margin-right: 0;
+}
+}
+
+.team_account-link,
+.account_link {
+    border: none;
+    border-radius: 50%;
+    background-size: contain;
+    background-position: center;
+    width: 44px;
+    height: 44px;
+    transition: background $tr-duration $tr-timing-function;
+}
+
+.team_account-icon {
+    fill: #afb1b8;
+}
+
+.team_account-link:hover,
+.team_account-link:focus {
+    background: $accent-color;
+& .team_account-icon {
+    fill: #ffffff;
+}
+}
+

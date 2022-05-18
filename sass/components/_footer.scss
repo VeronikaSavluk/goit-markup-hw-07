@@ -1,0 +1,120 @@
+/* Footer */
+.page-footer {
+    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
+    color: $secondary-text-color;
+}
+
+.page-footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: $secondary-text-color;
+}
+
+.feedback-contacts {
+    display: flex;
+    align-items: baseline;
+}
+
+.feedback-contact {
+    margin-right: 70px;
+
+    &:nth-child(2) {
+    margin-right: 93px;
+    padding: 0;
+}
+    &:last-child {
+    margin-right: 0;
+}
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    width: 231px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+a.map {
+    color: $secondary-text-color;
+}
+a.address_link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    &:nth-child(n+2) {
+    padding-top: 9px;
+}
+}
+.address_link {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.account_link {
+    background: rgba(255, 255, 255, 0.1);
+    transition: background $tr-duration $tr-timing-function;
+    &:hover,
+    &:focus {
+    background: $accent-color;
+}}
+
+.account_icon {
+    fill: #ffffff;
+}
+
+.feedback-form {
+    display: flex;
+}
+
+.feedback-form_input {
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    color: var(--secondary-text-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    outline: transparent;
+    cursor: pointer;
+    &::placeholder {
+    display: flex;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+}
+
+.feedback-form_button-submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    padding: 0;
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    background-color: $accent-btn-color;
+    cursor: pointer;
+}
+
+.feedback-form_icon-submit {
+    margin-left: 10px;
+    height: 50%;
+    fill: #ffffff;
+}

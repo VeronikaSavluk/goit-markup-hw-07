@@ -1,0 +1,10 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &:nth-child(3) {
+    padding-top: 0;
+}
+.main-studio &:first-child {
+    padding: 200px 0;
+}
+}

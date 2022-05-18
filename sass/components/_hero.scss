@@ -1,0 +1,47 @@
+/* Hero */
+.hero_title {
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+}
+
+.hero_title,
+.portfolio_title {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 696px;
+    height: 120px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-text-color;
+}
+
+.hero_button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 10px 32px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: $accent-btn-color;
+}
+
+.overlay {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

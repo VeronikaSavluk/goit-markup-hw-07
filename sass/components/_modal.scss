@@ -1,0 +1,199 @@
+/*Modal*/
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: opasity 250ms, visibility 1500ms;
+}
+
+.is-hidden {
+    opacity: 1;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    width: 528px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 1500ms;
+}
+
+.backdrop.is-hidden .modal {
+    opacity: 1;
+    transform: translate(100%, 100%) scale(0) rotate(180deg);
+    transition: transform 1500ms;
+}
+
+.button-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: fill $tr-duration $tr-timing-function;
+    &:hover .button-close_icon {
+    fill: $accent-color;
+}
+}
+
+.button-close_icon {
+    fill: #000000;
+    transition: fill $tr-duration $tr-timing-function;
+}
+
+.modal-request {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $text-color;
+}
+
+/*Modal form*/
+.modal-date {
+    margin-bottom: 10px;
+    &:nth-child(4) {
+    margin-bottom: 0;
+}
+}
+
+.modal-date_input-wrap {
+    position: relative;
+}
+
+.modal-date_label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $primery-text-color;
+}
+
+.modal-date_input {
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    background-color: transparent;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color $tr-duration $tr-timing-function;
+    &:focus {
+    border-color: $accent-color;
+}
+    &:focus+.modal-date_icon {
+    fill: $accent-color;
+}
+}
+
+.modal-date_icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: #212121;
+    transition: fill $tr-duration $tr-timing-function;
+}
+
+.modal-date_texteria {
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+    cursor: pointer;
+    transition: border-color $tr-duration $tr-timing-function;
+    &:focus {
+    border-color: $accent-color;
+}
+}
+
+.modal-date_input::placeholder,
+.modal-date_texteria::placeholder {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-checkbox {
+    margin: 0 auto 30px;
+}
+
+.modal-checkbox_label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: $primery-text-color;
+    cursor: pointer;
+}
+
+.modal-checkbox_input {
+    visibility: hidden;
+    &:checked+.modal-checkbox_label .modal-checkbox_icon {
+    background: $accent-color;
+    border-color: $accent-color;
+    fill: $secondary-text-color;
+}
+}
+
+.modal-checkbox_icon {
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    fill: transparent;
+}
+
+.modal-checkbox_policy {
+    margin-left: 4px;
+    text-decoration: underline;
+    color: $accent-color;
+}
+
+.modal_button-submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-color: $accent-btn-color;
+    border: none;
+    border-radius: 4px;
+    background-color: $accent-btn-color;
+    color: $secondary-text-color;
+    cursor: pointer;
+}

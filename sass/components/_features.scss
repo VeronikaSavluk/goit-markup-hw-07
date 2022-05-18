@@ -1,0 +1,79 @@
+/* Features page*/
+.features_headline,
+.perfomance_headline,
+.team_headline,
+.clients_headline {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    color: $text-color;
+}
+
+.features_headline {
+    display: none;
+    color: $primery-bg-color;
+}
+
+.features_items,
+.features_icon,
+.perfomance_items,
+.header-navigation_items,
+.header-contacts,
+.team_members,
+.team_account-link,
+.clients_items,
+.clients_link,
+.accounts,
+.account_link,
+.filter_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_item {
+    margin-right: 30px;
+    width: 270px;
+    &:last-child {
+    margin-right: 0;
+}
+}
+
+.features_icon {
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+}
+
+.features_title,
+.feedback-act_title,
+.perfomance_title {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.features_title {
+    margin-bottom: 10px;
+    color: $text-color;
+}
+
+.features_text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.feedback-act_title {
+    margin-bottom: 20px;
+    color: $secondary-text-color;
+}
