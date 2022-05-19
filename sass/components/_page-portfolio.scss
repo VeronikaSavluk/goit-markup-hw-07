@@ -1,16 +1,16 @@
 /* Portfolio page*/
-.portfolio_title {
+.portfolio__title {
     display: none;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
 }
 
-.filter_item:not(:last-child) {
+.filter__item:not(:last-child) {
     margin-right: 8px;
 }
 
-.filter_button {
+.filter__button {
     display: flex;
     border-radius: 4px;
     padding: 6px 22px;
@@ -41,17 +41,17 @@
 }
 
 /* Projects */
-.project_items {
+.project__items {
     display: flex;
     flex-wrap: wrap;
 }
 
-.project_item {
+.project__item {
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
     transition: box-shadow $tr-duration $tr-timing-function;
-    &:hover .description_text--cover {
+    &:hover .description__text--cover {
     transform: translateY(0);
     }
     &:nth-child(3n) {
@@ -59,8 +59,8 @@
     }
 }
 
-.project_link:hover,
-.project_link:focus {
+.project__link:hover,
+.project__link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -70,18 +70,18 @@ img {
     height: auto;
 }
 
-.project_description {
+.project__description {
     padding: 20px 24px;
     border: 1px solid #EEEEEE;
     border-top: none;
 }
 
-.project_description--cover {
+.project__description--cover {
     position: relative;
     overflow: hidden;
 }
 
-.description_text--cover {
+.description__text--cover {
     position: absolute;
     padding: 63px 24px;
     top: 0;
@@ -98,7 +98,7 @@ img {
     transition: transform $tr-duration;
 }
 
-.project_title {
+.project__title {
     margin-bottom: 4px;
     margin-top: 0;
     .link & {
@@ -110,7 +110,7 @@ img {
 }
 }
 
-.project_text {
+.project__text {
     margin: 0;
     .link & {
     font-weight: 400;

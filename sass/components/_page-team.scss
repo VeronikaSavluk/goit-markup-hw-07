@@ -3,7 +3,7 @@
     background-color: #F5F4FA;
 }
 
-.team_member {
+.team-member {
     margin-right: 30px;
     background-color: #ffffff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -12,11 +12,11 @@
     margin-right: 0;
 }}
 
-.team_member-card {
+.team-member__card {
     padding: 30px 0;
 }
 
-.team_member-name {
+.team-member__name {
     margin: 0;
     margin-bottom: 10px;
     font-weight: 500;
@@ -27,7 +27,7 @@
     color: $text-color;
 }
 
-.team_member-position {
+.team-member__position {
     margin: 0;
     font-size: 16px;
     line-height: 1.19;
@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-.team_member-accounts {
+.team-member__accounts {
     display: flex;
     justify-items: center;
     margin-top: 16px;
@@ -43,7 +43,7 @@
     margin-left: 32px;
 }
 
-.team_member-account,
+.team-member__account,
 .account {
     margin-right: 10px;
     &:last-child {
@@ -51,8 +51,8 @@
 }
 }
 
-.team_account-link,
-.account_link {
+.team-member__account-link,
+.account__link {
     border: none;
     border-radius: 50%;
     background-size: contain;
@@ -62,14 +62,14 @@
     transition: background $tr-duration $tr-timing-function;
 }
 
-.team_account-icon {
+.team-member__account-icon {
     fill: #afb1b8;
 }
 
-.team_account-link:hover,
-.team_account-link:focus {
+.team-member__account-link:hover,
+.team-member__account-link:focus {
     background: $accent-color;
-& .team_account-icon {
+& .team-member__account-icon {
     fill: #ffffff;
 }
 }

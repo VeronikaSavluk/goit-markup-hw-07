@@ -1,12 +1,12 @@
 /* Hero */
-.hero_title {
+.hero__title {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
 }
 
-.hero_title,
-.portfolio_title {
+.hero__title,
+.portfolio__title {
     margin: 0 auto;
     margin-bottom: 30px;
     width: 696px;
@@ -17,7 +17,7 @@
     color: $secondary-text-color;
 }
 
-.hero_button {
+.hero__button {
     display: block;
     margin: 0 auto;
     border-radius: 4px;

@@ -33,7 +33,7 @@
     transition: transform 1500ms;
 }
 
-.button-close {
+.modal__button--close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -45,17 +45,17 @@
     border-radius: 50%;
     cursor: pointer;
     transition: fill $tr-duration $tr-timing-function;
-    &:hover .button-close_icon {
+    &:hover .modal__button-icon--close {
     fill: $accent-color;
 }
 }
 
-.button-close_icon {
+.modal__button-icon--close {
     fill: #000000;
     transition: fill $tr-duration $tr-timing-function;
 }
 
-.modal-request {
+.modal__request {
     margin-top: 0;
     margin-bottom: 10px;
     font-weight: 700;
@@ -67,18 +67,18 @@
 }
 
 /*Modal form*/
-.modal-date {
+.modal__date {
     margin-bottom: 10px;
     &:nth-child(4) {
     margin-bottom: 0;
 }
 }
 
-.modal-date_input-wrap {
+.modal__date-input--wrap {
     position: relative;
 }
 
-.modal-date_label {
+.modal__date-label {
     display: block;
     margin-bottom: 4px;
     font-size: 12px;
@@ -87,7 +87,7 @@
     color: $primery-text-color;
 }
 
-.modal-date_input {
+.modal__date-input {
     padding-left: 42px;
     width: 100%;
     height: 40px;
@@ -103,12 +103,12 @@
     &:focus {
     border-color: $accent-color;
 }
-    &:focus+.modal-date_icon {
+    &:focus+.modal__date-icon {
     fill: $accent-color;
 }
 }
 
-.modal-date_icon {
+.modal__date-icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -117,7 +117,7 @@
     transition: fill $tr-duration $tr-timing-function;
 }
 
-.modal-date_texteria {
+.modal__date-texteria {
     width: 100%;
     height: 120px;
     padding: 12px 16px;
@@ -132,8 +132,8 @@
 }
 }
 
-.modal-date_input::placeholder,
-.modal-date_texteria::placeholder {
+.modal__date-input::placeholder,
+.modal__date-texteria::placeholder {
     width: 100%;
     font-size: 12px;
     line-height: 1.17;
@@ -141,11 +141,11 @@
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-checkbox {
+.modal__checkbox {
     margin: 0 auto 30px;
 }
 
-.modal-checkbox_label {
+.modal__checkbox-label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -157,16 +157,16 @@
     cursor: pointer;
 }
 
-.modal-checkbox_input {
+.modal__checkbox-input {
     visibility: hidden;
-    &:checked+.modal-checkbox_label .modal-checkbox_icon {
+    &:checked+.modal__checkbox-label .modal__checkbox-icon {
     background: $accent-color;
     border-color: $accent-color;
     fill: $secondary-text-color;
 }
 }
 
-.modal-checkbox_icon {
+.modal__checkbox-icon {
     margin-right: 7px;
     width: 16px;
     height: 15px;
@@ -175,13 +175,13 @@
     fill: transparent;
 }
 
-.modal-checkbox_policy {
+.modal__checkbox-policy {
     margin-left: 4px;
     text-decoration: underline;
     color: $accent-color;
 }
 
-.modal_button-submit {
+.modal__button-submit {
     display: block;
     margin: 0 auto;
     padding: 10px;

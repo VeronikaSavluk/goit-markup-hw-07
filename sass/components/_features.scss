@@ -1,8 +1,8 @@
 /* Features page*/
-.features_headline,
-.perfomance_headline,
-.team_headline,
-.clients_headline {
+.features__headline,
+.perfomance__headline,
+.team__headline,
+.clients__headline {
     padding: 0;
     margin: 0;
     margin-bottom: 50px;
@@ -13,29 +13,29 @@
     color: $text-color;
 }
 
-.features_headline {
+.features__headline {
     display: none;
     color: $primery-bg-color;
 }
 
-.features_items,
-.features_icon,
-.perfomance_items,
-.header-navigation_items,
+.features__items,
+.features__icon,
+.perfomance__items,
+.header-navigation__items,
 .header-contacts,
-.team_members,
-.team_account-link,
-.clients_items,
-.clients_link,
+.team-members,
+.team-member__account-link,
+.clients__items,
+.clients__link,
 .accounts,
-.account_link,
-.filter_items {
+.account__link,
+.filter__items {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.features_item {
+.features__item {
     margin-right: 30px;
     width: 270px;
     &:last-child {
@@ -43,16 +43,16 @@
 }
 }
 
-.features_icon {
+.features__icon {
     margin-bottom: 30px;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
 }
 
-.features_title,
-.feedback-act_title,
-.perfomance_title {
+.features__title,
+.feedback-act__title,
+.perfomance__title {
     padding: 0;
     margin: 0;
     font-weight: 700;
@@ -61,19 +61,19 @@
     text-transform: uppercase;
 }
 
-.features_title {
+.features__title {
     margin-bottom: 10px;
     color: $text-color;
 }
 
-.features_text {
+.features__text {
     margin: 0;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-.feedback-act_title {
+.feedback-act__title {
     margin-bottom: 20px;
     color: $secondary-text-color;
 }

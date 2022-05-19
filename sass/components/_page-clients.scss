@@ -1,12 +1,12 @@
 /*Page clients*/
-.clients_item {
+.clients__item {
     margin-right: 30px;
     &:last-child {
     margin-right: 0;
 }
 }
 
-.clients_link {
+.clients__link {
     width: 170px;
     height: 92px;
     background-position: center;

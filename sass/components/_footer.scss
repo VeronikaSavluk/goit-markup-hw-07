@@ -44,7 +44,7 @@
 a.map {
     color: $secondary-text-color;
 }
-a.address_link {
+a.address__link {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -54,11 +54,11 @@ a.address_link {
     padding-top: 9px;
 }
 }
-.address_link {
+.address__link {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.account_link {
+.account__link {
     background: rgba(255, 255, 255, 0.1);
     transition: background $tr-duration $tr-timing-function;
     &:hover,
@@ -66,7 +66,7 @@ a.address_link {
     background: $accent-color;
 }}
 
-.account_icon {
+.account__icon {
     fill: #ffffff;
 }
 
@@ -74,7 +74,7 @@ a.address_link {
     display: flex;
 }
 
-.feedback-form_input {
+.feedback-form__input {
     padding-left: 16px;
     width: 358px;
     height: 50px;
@@ -94,7 +94,7 @@ a.address_link {
 }
 }
 
-.feedback-form_button-submit {
+.feedback-form__button-submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ a.address_link {
     cursor: pointer;
 }
 
-.feedback-form_icon-submit {
+.feedback-form__icon-submit {
     margin-left: 10px;
     height: 50%;
     fill: #ffffff;
